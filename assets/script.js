@@ -8,3 +8,5 @@ const quearyUrl = "https://api.nasa.gov/planetary/apod?api_key=4INjsmvRu2ZfwkrdU
         document.getElementById("picture").setAttribute("src", responce.hdurl);
     })
 
+console.log(window.devicePixelRatio)
+
