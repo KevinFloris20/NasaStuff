@@ -1,3 +1,4 @@
+//Get Nasa API and make it background
 const quearyUrl = "https://api.nasa.gov/planetary/apod?api_key=4INjsmvRu2ZfwkrdUPUbqk0cpCXP4fpvVQlN4qBw";
     $.ajax({
         url: quearyUrl,
@@ -8,6 +9,20 @@ const quearyUrl = "https://api.nasa.gov/planetary/apod?api_key=4INjsmvRu2ZfwkrdU
         document.body.style.size = "auto";
         document.body.style.backgroundImage = "url("+responce.hdurl+")";
     })
+console.log(window.devicePixelRatio)//for personal ref
 
-console.log(window.devicePixelRatio)
+//animate and make the collapsible buttons functional
+const coll = document.getElementsByClassName("collapsible");
+
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
 

@@ -2,7 +2,7 @@ html{
     background-color: black;
 }
 
-body {
+body{
     position: absolute;
     top:0;
     left:0;
@@ -12,6 +12,44 @@ body {
     width:100%;
 }
 
+#h{
+  color: white;
+  size: 80px;
+  text-align: center;
+}
+
 #body{
     padding: 50px;
+}
+
+#collLists{
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  outline: black;
+  font-size: 15px;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  max-height: 0;
+  width: 50%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
