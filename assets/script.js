@@ -25,10 +25,10 @@ for (var i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
-      NasaBackground();
+    //   NasaBackground();
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-      NasaBackground();
+    //   NasaBackground();
     } 
   });
 }
