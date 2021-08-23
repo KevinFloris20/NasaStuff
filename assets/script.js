@@ -8,7 +8,7 @@ function NasaBackground(){
     }).then(function(responce){
         console.log(responce);
         console.log(responce.hdurl);
-        document.body.style.size = "fill";
+        document.body.style.size = "auto";
         document.body.style.backgroundImage = "url("+responce.hdurl+")";
     })
 }
