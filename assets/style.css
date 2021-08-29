@@ -6,6 +6,7 @@ html{
 
 body{
     position:relative;
+    background: no-repeat center center;
     top:0;
     left:0;
     bottom:0;
@@ -80,14 +81,16 @@ p{
 
   body{
       position:relative;
+      background: no-repeat center center;
       top:0;
       left:0;
       bottom:0;
       right:0;
       padding:0;
       margin: 0;
-      height:100%;
+      height:auto;
       width:100%;
+
   }
 
   #h{
@@ -119,5 +122,14 @@ p{
     text-align: center;
     outline: black solid 2px;
     font-size: 15px;
+    margin: 0px;
+  }
+  .content {
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: 0px;
   }
 }
