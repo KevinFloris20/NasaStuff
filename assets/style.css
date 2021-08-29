@@ -41,7 +41,7 @@ p{
 }
 
 .collapsible {
-  background-color: #777;
+  background-color: rgba(0,0,0,.5);
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -49,9 +49,9 @@ p{
   border: none;
   align-items: center;
   text-align: center;
-  outline: black;
+  outline: black solid 2px;
   font-size: 15px;
-  
+  margin: 5px;
 }
 
 .active, .collapsible:hover {
@@ -63,7 +63,11 @@ p{
   width: 100%;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.753);
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* This is the css reactivity for smaller screens */
@@ -106,14 +110,14 @@ p{
   }
   
   .collapsible {
-    background-color: #777;
+    background-color: rgba(0,0,0,.5);
     color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     align-items: center;
     text-align: center;
-    outline: black;
-    font-size:15px
+    outline: black solid 2px;
+    font-size: 15px;
   }
 }
